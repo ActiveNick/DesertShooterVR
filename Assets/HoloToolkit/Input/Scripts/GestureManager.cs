@@ -154,10 +154,11 @@ namespace HoloToolkit.Unity
 
         private void OnTap()
         {
-            if (FocusedObject != null)
-            {
-                FocusedObject.SendMessage("OnSelect");
-            }
+            //if (FocusedObject != null)
+            //{
+            //    FocusedObject.SendMessage("OnSelect");
+            //}
+            SendMessage("OnSelect");
         }
 
         private void ManipulationRecognizer_ManipulationStartedEvent(InteractionSourceKind source, Vector3 cumulativeDelta, Ray headRay)

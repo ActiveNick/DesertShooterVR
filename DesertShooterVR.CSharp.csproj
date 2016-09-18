@@ -251,9 +251,7 @@
     <Compile Include="Assets\HoloToolkit\Utilities\Tests\Scripts\PlaneTargetGroup.cs" />
     <Compile Include="Assets\HoloToolkit\Utilities\Tests\Scripts\PlaneTargetGroupPicker.cs" />
     <Compile Include="Assets\HoloToolkit\Utilities\Tests\TextToSpeechManagerTest.cs" />
-    <Compile Include="Assets\Scripts\Camera\CameraControl.cs" />
-    <Compile Include="Assets\Scripts\Managers\GameManager.cs" />
-    <Compile Include="Assets\Scripts\Managers\TankManager.cs" />
+    <Compile Include="Assets\Scripts\Player\ProjectileLauncher.cs" />
     <Compile Include="Assets\Scripts\Shell\ShellExplosion.cs" />
     <Compile Include="Assets\Scripts\Tank\TankHealth.cs" />
     <Compile Include="Assets\Scripts\Tank\TankMovement.cs" />
