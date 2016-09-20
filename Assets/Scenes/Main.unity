@@ -373,7 +373,7 @@ MonoBehaviour:
   m_FireTransform: {fileID: 834743404}
   m_ShootingAudio: {fileID: 834743400}
   m_FireClip: {fileID: 8300000, guid: 672a9941361ad494a99fba36759eca80, type: 3}
-  m_CurrentLaunchForce: 100
+  m_CurrentLaunchForce: 300
 --- !u!114 &921170815
 MonoBehaviour:
   m_ObjectHideFlags: 0

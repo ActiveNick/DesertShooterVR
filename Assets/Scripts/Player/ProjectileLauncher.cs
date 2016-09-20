@@ -20,7 +20,7 @@ public class ProjectileLauncher : MonoBehaviour {
     public AudioClip m_FireClip;                // Audio that plays when each shot is fired.
     public float m_CurrentLaunchForce = 30.0f; // The force that will be given to the shell when the fire button is released.
 
-    private bool m_Fired;                       // Whether or not the shell has been launched with this button press.
+    //private bool m_Fired;                       // Whether or not the shell has been launched with this button press.
 
     private void OnEnable()
     {
@@ -47,7 +47,7 @@ public class ProjectileLauncher : MonoBehaviour {
     private void Fire()
     {
         // Set the fired flag so only Fire is only called once.
-        m_Fired = true;
+        //m_Fired = true;
 
         // Create an instance of the shell and store a reference to it's rigidbody.
         Rigidbody shellInstance =
