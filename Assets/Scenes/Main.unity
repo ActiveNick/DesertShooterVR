@@ -208,7 +208,7 @@ MeshRenderer:
   m_LightProbeUsage: 0
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: 3953bef76c7f3b143b9925b07a06d4b2, type: 2}
+  - {fileID: 2100000, guid: 74120e80936246b488755c97163c09f4, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_ProbeAnchor: {fileID: 0}
@@ -238,7 +238,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 470514709}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 10, z: 0}
+  m_LocalPosition: {x: 0, y: 57.7, z: 0}
   m_LocalScale: {x: 250, y: 250, z: 250}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
@@ -477,7 +477,7 @@ MonoBehaviour:
   m_FireTransform: {fileID: 834743404}
   m_ShootingAudio: {fileID: 834743400}
   m_FireClip: {fileID: 8300000, guid: 672a9941361ad494a99fba36759eca80, type: 3}
-  m_CurrentLaunchForce: 300
+  m_CurrentLaunchForce: 30
 --- !u!114 &921170815
 MonoBehaviour:
   m_ObjectHideFlags: 0
