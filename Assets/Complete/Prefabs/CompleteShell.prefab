@@ -304,10 +304,7 @@ MonoBehaviour:
     m_Bits: 512
   m_ExplosionParticles: {fileID: 19870274}
   m_ExplosionAudio: {fileID: 8204558}
-  m_MaxDamage: 100
-  m_ExplosionForce: 1000
   m_MaxLifeTime: 2
-  m_ExplosionRadius: 5
 --- !u!136 &13693818
 CapsuleCollider:
   m_ObjectHideFlags: 1
@@ -315,7 +312,7 @@ CapsuleCollider:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 192454}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   m_Radius: 0.15
   m_Height: 0.55
