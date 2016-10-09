@@ -6,12 +6,14 @@ HoloLens-based "VR" also has the advantage of allowing room-scale movement witho
 This is a work in a progress that I am sharing publicly as I add features.
 
 ## Acknowledgements
-This project uses assets from the [Tanks! tutorial](https://www.assetstore.unity3d.com/en/?_ga=1.83361502.975056403.1471960723#!/content/46209/) from the Unite 2015 Training Event. Since the military base uses mobile-grade 3D models, they work well on a self-contained mobile device like the HoloLens.
+* This project uses assets from the [Tanks! tutorial](https://www.assetstore.unity3d.com/en/?_ga=1.83361502.975056403.1471960723#!/content/46209/) from the Unite 2015 Training Event. Since the military base uses mobile-grade 3D models, they work well on a self-contained mobile device like the HoloLens.
+* Simple Cloud System by [Rispat Momit](https://www.assetstore.unity3d.com/en/#!/search/page=1/sortby=popularity/query=publisher:2616). This cloud system is available for free from the [Asset Store (get it here)](https://www.assetstore.unity3d.com/en/#!/content/6715). If you want to use this cloud system in your own projects, please get it in the [Asset Store](https://www.assetstore.unity3d.com/en/#!/content/6715), not from my project.
 
 ## Features Implemented To Date
 * Starter scene that consists of a simple military base in a desert.
 * Walk around (physically) when you wear the HoloLens. You can use the arrow keys and mouse look in the Unity editor to debug.
 * AirTap to fire a bullet. The crosshair shows where you aim and it uses physics (for now). You can use SPACE in the Unity editor to debug.
+* Simple cloud system (see acknowledgements above).
 
 ## Implementation Notes
 * The projectile system uses Unity's physics system, which unfortunately doesn't work too well when you fire bullets at 300 m/s. High performance physics are failing and some collisions simply don't occur, or they get triggered too late. I will use the classic "cheat" used in many standard first-person shooters and raycast the impact of my bullets and forego the actual "physics" drop.
