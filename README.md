@@ -8,6 +8,7 @@ This is a work in a progress that I am sharing publicly as I add features.
 ## Acknowledgements
 * This project uses assets from the [Tanks! tutorial](https://www.assetstore.unity3d.com/en/?_ga=1.83361502.975056403.1471960723#!/content/46209/) from the Unite 2015 Training Event. Since the military base uses mobile-grade 3D models, they work well on a self-contained mobile device like the HoloLens.
 * Simple Cloud System by [Rispat Momit](https://www.assetstore.unity3d.com/en/#!/search/page=1/sortby=popularity/query=publisher:2616). This cloud system is available for free from the [Asset Store (get it here)](https://www.assetstore.unity3d.com/en/#!/content/6715). If you want to use this cloud system in your own projects, please get it in the [Asset Store](https://www.assetstore.unity3d.com/en/#!/content/6715), not from my project.
+* Starship Corvette by [Clint Bellanger](http://opengameart.org/users/clint-bellanger). Get it here at [OpenGameArt.org](http://opengameart.org/content/starship-corvette).
 
 ## Features Implemented To Date
 * Starter scene that consists of a simple military base in a desert.
