@@ -253,6 +253,7 @@
     <Compile Include="Assets\HoloToolkit\Utilities\Tests\TextToSpeechManagerTest.cs" />
     <Compile Include="Assets\Scripts\Player\ProjectileLauncher.cs" />
     <Compile Include="Assets\Scripts\Shell\ShellExplosion.cs" />
+    <Compile Include="Assets\Scripts\StarshipSoundManager.cs" />
     <Compile Include="Assets\Scripts\Tank\TankHealth.cs" />
     <Compile Include="Assets\Scripts\Tank\TankMovement.cs" />
     <Compile Include="Assets\Scripts\Tank\TankShooting.cs" />
