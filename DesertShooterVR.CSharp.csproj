@@ -90,14 +90,7 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Complete\Scripts\Camera\CameraControl.cs" />
-    <Compile Include="Assets\Complete\Scripts\Managers\GameManager.cs" />
-    <Compile Include="Assets\Complete\Scripts\Managers\TankManager.cs" />
     <Compile Include="Assets\Complete\Scripts\Shell\ShellExplosion.cs" />
-    <Compile Include="Assets\Complete\Scripts\Tank\TankHealth.cs" />
-    <Compile Include="Assets\Complete\Scripts\Tank\TankMovement.cs" />
-    <Compile Include="Assets\Complete\Scripts\Tank\TankShooting.cs" />
-    <Compile Include="Assets\Complete\Scripts\UI\UIDirectionControl.cs" />
     <Compile Include="Assets\HoloToolkit\CrossPlatform\Scripts\MetroHandleRef.cs" />
     <Compile Include="Assets\HoloToolkit\CrossPlatform\Scripts\Reflection\ReflectionExtensions.cs" />
     <Compile Include="Assets\HoloToolkit\CrossPlatform\Scripts\Reflection\TypeUtils.cs" />
