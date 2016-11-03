@@ -6506,6 +6506,7 @@ GameObject:
   - component: {fileID: 921170816}
   - component: {fileID: 921170815}
   - component: {fileID: 921170814}
+  - component: {fileID: 921170818}
   m_Layer: 0
   m_Name: GameManagers
   m_TagString: Untagged
@@ -6525,7 +6526,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shotsPerSec: 2
-  m_PlayerNumber: 1
   m_Shell: {fileID: 5409530, guid: 008ecb1b70bec724fa2cd34255b0d8f8, type: 2}
   m_FireTransform: {fileID: 834743404}
   m_ShootingAudio: {fileID: 834743400}
@@ -6574,6 +6574,17 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &921170818
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 921170813}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 80067c402cb4e1d4f97420cc6935e895, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!224 &925089527 stripped
 RectTransform:
   m_PrefabParentObject: {fileID: 22403664, guid: a17ad45c4d1408e46be783208991440a,
