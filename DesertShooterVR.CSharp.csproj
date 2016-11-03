@@ -257,6 +257,7 @@
     <Compile Include="Assets\HoloToolkit\Utilities\Tests\Scripts\PlaneTargetGroupPicker.cs" />
     <Compile Include="Assets\HoloToolkit\Utilities\Tests\TextToSpeechManagerTest.cs" />
     <Compile Include="Assets\Scripts\Environment\StarshipSoundManager.cs" />
+    <Compile Include="Assets\Scripts\Player\GameManager.cs" />
     <Compile Include="Assets\Scripts\Player\ProjectileLauncher.cs" />
     <Compile Include="Assets\Scripts\Player\SpeechManager.cs" />
     <Compile Include="Assets\Scripts\Shell\ShellExplosion.cs" />

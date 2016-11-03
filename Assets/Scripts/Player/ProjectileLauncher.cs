@@ -30,7 +30,7 @@ public class ProjectileLauncher : MonoBehaviour {
 	}
 
     /// <summary>
-    /// OnSelect is sent by gesture manager.
+    /// OnSelect is triggered by the gesture manager, signals the user wants to shoot a bullet.
     /// </summary>
     void OnSelect()
     {
@@ -41,6 +41,9 @@ public class ProjectileLauncher : MonoBehaviour {
         }
     }
 
+    /// <summary>
+    /// Instantiates a bullet using the Shell prefab and shoots it using Unity physics.
+    /// </summary>
     private void Fire()
     {
         // Create an instance of the shell and store a reference to it's rigidbody.
