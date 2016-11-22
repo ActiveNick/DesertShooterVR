@@ -3,7 +3,7 @@ Sample first-person-style shooter game for virtual and mixed reality. The goal i
 
 HoloLens-based "VR" also has the advantage of allowing room-scale movement without any separate tracking equipment. The military base in this sample is actually quite huge and it would otherwise be very hard (i.e. impossible) to track the user accurately as they walk around the base if you had to install external tracks (e.g. HTC Vive) and if the user was tethered to a PC. You'll need a "convention center"-size space to truly walk all over the map, but most of the action is meant to be played from the center of the map.
 
-This is a work in a progress that I am sharing publicly as I add features. **The latest version was built in Unity 5.5.0b6 (Preview)**.
+This is a work in a progress that I am sharing publicly as I add features. **The latest version was built in Unity 5.5.0b10 (Preview)**.
 
 ![Screenshot](Screenshots/Screen02-FirstPersonView.JPG)
 
