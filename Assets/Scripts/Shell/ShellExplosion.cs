@@ -17,11 +17,10 @@ public class ShellExplosion : MonoBehaviour
     }
 
 
-    private void OnTriggerEnter(Collider other)
-    {
-        // Find all the tanks in an area around the shell and damage them.
-    }
+    //private void OnTriggerEnter(Collider other)
+    //{
 
+    //}
 
     private float CalculateDamage(Vector3 targetPosition)
     {
