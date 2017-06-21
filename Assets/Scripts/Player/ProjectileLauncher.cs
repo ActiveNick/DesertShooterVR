@@ -1,7 +1,9 @@
 ﻿using UnityEngine;
 using System.Collections;
+using HoloToolkit.Unity.InputModule;
+using System;
 
-public class ProjectileLauncher : MonoBehaviour {
+public class ProjectileLauncher : MonoBehaviour, IInputClickHandler {
 
     /// <summary>
     /// Keep Track of the allowed shot interval to throttle users' shots
@@ -26,13 +28,14 @@ public class ProjectileLauncher : MonoBehaviour {
 
     // Use this for initialization
     void Start () {
-	
-	}
+        InputManager.Instance.PushFallbackInputHandler(gameObject);
+    }
 
     /// <summary>
-    /// OnSelect is triggered by the gesture manager, signals the user wants to shoot a bullet.
+    /// OnInputClicked is triggered by the Input Manager on Air Tap, 
+    /// signals that the user wants to shoot a bullet.
     /// </summary>
-    void OnSelect()
+    public void OnInputClicked(InputClickedEventData eventData)
     {
         if ((Time.realtimeSinceStartup - LastShotTime) > (1 / shotsPerSec))
         {
