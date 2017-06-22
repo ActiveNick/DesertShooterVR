@@ -327,6 +327,7 @@
     <Compile Include="Assets\Scripts\Player\GameManager.cs" />
     <Compile Include="Assets\Scripts\Player\ProjectileLauncher.cs" />
     <Compile Include="Assets\Scripts\Shell\ShellExplosion.cs" />
+    <Compile Include="Assets\Scripts\SpawnManager.cs" />
     <Compile Include="Assets\Scripts\UI\UIDirectionControl.cs" />
     <Compile Include="Assets\SimpleCloudSystem by RM\SceneComponents\Standard Assets\Character Controllers\Sources\Scripts\MouseLook.cs" />
   </ItemGroup>
