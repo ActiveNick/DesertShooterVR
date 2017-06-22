@@ -60,8 +60,4 @@ public class ProjectileLauncher : MonoBehaviour, IInputClickHandler {
         m_ShootingAudio.Play();
     }
 
-    // Update is called once per frame
-    void Update () {
-	
-	}
 }
