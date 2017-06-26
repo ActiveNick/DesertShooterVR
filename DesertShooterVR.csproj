@@ -324,8 +324,10 @@
     <Compile Include="Assets\HoloToolkit\Utilities\Shaders\FastConfigurable\Scripts\CalibrationSpace.cs" />
     <Compile Include="Assets\Scripts\EnemyMovement.cs" />
     <Compile Include="Assets\Scripts\Environment\StarshipSoundManager.cs" />
+    <Compile Include="Assets\Scripts\Hovering.cs" />
     <Compile Include="Assets\Scripts\Player\GameManager.cs" />
     <Compile Include="Assets\Scripts\Player\ProjectileLauncher.cs" />
+    <Compile Include="Assets\Scripts\Player\RaycastShooter.cs" />
     <Compile Include="Assets\Scripts\Shell\ShellExplosion.cs" />
     <Compile Include="Assets\Scripts\SpawnManager.cs" />
     <Compile Include="Assets\Scripts\UI\UIDirectionControl.cs" />

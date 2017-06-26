@@ -4269,7 +4269,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 384fc15a162678249bf289c2864a24fb, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.5
+  m_Volume: 1
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -4349,7 +4349,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
-  m_Volume: 0.5
+  m_Volume: 1
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -6637,9 +6637,10 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 921170817}
-  - component: {fileID: 921170814}
   - component: {fileID: 921170819}
+  - component: {fileID: 921170814}
   - component: {fileID: 921170815}
+  - component: {fileID: 921170816}
   m_Layer: 0
   m_Name: GameManagers
   m_TagString: Untagged
@@ -6653,7 +6654,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 921170813}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7ef37a7128b40204f9699dcee4997113, type: 3}
   m_Name: 
@@ -6678,6 +6679,28 @@ MonoBehaviour:
   Enemy: {fileID: 1019465410016544, guid: d4de3446f0946f64d9732b2936adcf76, type: 2}
   EnemyTarget: {fileID: 918734428}
   SpawnInterval: 5
+--- !u!114 &921170816
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 921170813}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ad23f17175b19664e85bf6482f9ff68e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  FireRate: 0.5
+  BulletSpeed: 300
+  WeaponRange: 200
+  FireTransform: {fileID: 918734430}
+  ShootingAudio: {fileID: 918734429}
+  FireClip: {fileID: 8300000, guid: 762d716893489e44295b6c7ca0abf07c, type: 3}
+  HitParticles: {fileID: 19807510, guid: 1911d89758d97cc4898d240e9e2545f4, type: 2}
+  DestroyedParticles: {fileID: 19874418, guid: 6bc6d0dd8b8428e4ca316513f2cf13c6, type: 2}
+  ExplosionAudio: {fileID: 0}
+  ShellHitClip: {fileID: 0}
+  EnemyDestroyedClip: {fileID: 0}
 --- !u!4 &921170817
 Transform:
   m_ObjectHideFlags: 0
