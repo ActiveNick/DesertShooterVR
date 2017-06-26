@@ -6,8 +6,6 @@ using System;
 
 public class RaycastShooter : MonoBehaviour, IInputClickHandler
 {
-
-
     // Keep Track of the allowed shot interval to throttle users' shots
     public float FireRate = 0.5f;
     // This will be used to delay the bullet hit sound & particle effects
@@ -59,13 +57,37 @@ public class RaycastShooter : MonoBehaviour, IInputClickHandler
 
             if (Physics.Raycast(rayOrigin, FireTransform.forward, out hit, WeaponRange))
             {
-                ParticleSystem impact = Instantiate(HitParticles, hit.point, Quaternion.FromToRotation(Vector3.up, hit.normal));
-                impact.transform.parent = hit.transform;
-                // Play the bullet particle system no matter what we hit
-                impact.Play();
+                ExplosionAudio.gameObject.transform.position = hit.point;
 
-                // Once the particles have finished, destroy the gameobject they are on.
-                Destroy(impact.gameObject, impact.main.duration);
+                // If we hit an enemy...
+                if (hit.collider.gameObject.transform.root.gameObject.tag == "Enemy")
+                {
+                    ParticleSystem impact = Instantiate(DestroyedParticles, hit.point, Quaternion.FromToRotation(Vector3.up, hit.normal));
+                    //impact.transform.parent = hit.transform;
+                    // Play the bullet particle system no matter what we hit
+                    impact.Play();
+                    // Once the particles have finished, destroy the gameobject they are on.
+                    Destroy(impact.gameObject, impact.main.duration);// Play the bullet explosion sound effect.
+
+                    // Play the enemy explosion sound effect.
+                    ExplosionAudio.clip = EnemyDestroyedClip;
+
+                    Destroy(hit.collider.gameObject.transform.root.gameObject);
+                }
+                else
+                {
+                    ParticleSystem impact = Instantiate(HitParticles, hit.point, Quaternion.FromToRotation(Vector3.up, hit.normal));
+                    //impact.transform.parent = hit.transform;
+                    // Play the bullet particle system no matter what we hit
+                    impact.Play();
+                    // Once the particles have finished, destroy the gameobject they are on.
+                    Destroy(impact.gameObject, impact.main.duration);// Play the bullet explosion sound effect.
+
+                    // Play the bullet hit sound effect.
+                    ExplosionAudio.clip = ShellHitClip;
+                }
+
+                ExplosionAudio.Play();
             }
 
         }
