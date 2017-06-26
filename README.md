@@ -5,7 +5,7 @@ HoloLens-based "VR" also has the advantage of allowing room-scale movement witho
 
 This is a work in a progress that I am sharing publicly as I add features. 
 
-* **Unity version: 5.6.1f1 Release**
+* **Unity version: 5.6.2f1 Release**
 * **HoloToolkit version: 1.5.7**
 
 ![Screenshot](Screenshots/Screen02-FirstPersonView.JPG)
