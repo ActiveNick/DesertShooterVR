@@ -21,13 +21,12 @@ This is a work in a progress that I am sharing publicly as I add features.
 * Starter scene that consists of a simple military base in a desert.
 * Walk around (physically) when you wear the HoloLens. You can use the arrow keys and mouse look in the Unity editor to debug.
 * A starship lands on the helipad in front of you when the game starts. Enemy robots spawn from that spot every few seconds and they will home-in on your location... and track you.
-* Air Tap to fire a bullet (or use the HoloLens clicker) to destroy the robots. The crosshair shows where you aim and it uses physics (for now). You can use SPACE in the Unity editor to debug.
+* Air Tap to fire a bullet (or use the HoloLens clicker) to destroy the robots. The crosshair shows where you aim, through the crosshair is deliberately rendered close to you to force you to shift your gaze focus between the crosshair and objects in the distance, kinda like a real gun.
 * Simple cloud system (see acknowledgements above).
 * Spatial sounds distributed across the scene to provide a better feeling of immersion (e.g. wind sounds in the tower and canyons, machine sound in the factory, pressure sounds in the pump hacks, etc.)
 
 ## Implementation Notes
-* The projectile system uses Unity's physics system, which unfortunately doesn't work too well when you fire bullets at 300 m/s. High performance physics are failing and some collisions simply don't occur, or they get triggered too late. I will use the classic "cheat" used in many standard first-person shooters and raycast the impact of my bullets and forego the actual "physics" drop. This is still on my To Do list.
-* For that reason, you will need to accurately fire many bullets to actually destroy an enemy.
+* The shooting system was previously based on projectiles using Unity's physics system, which unfortunately doesn't work too well when you fire bullets at 300 m/s. High performance physics are failing and some collisions simply don't occur, or they get triggered too late. I decided to use the classic "cheat" used in many standard first-person shooters and raycast the impact of my bullets and forego the actual "physics" drop. The game now uses this raycasting system and I will tweak it over time. For example, the current implementation doesn't render any bullet trajectory nor is there any delay between shooting and hitting the target (i.e. there is no bullet travel time).
 * This project uses a Skybox, unlike other HoloLens project that usually rely on a black uniform background which would provide transparency on HoloLens. The Skybox preserves the relative feeling of immersion.
 * Nothing really happens yet when the enemies catch-up to you, they will just hover around your position and there is no current "Game Over" event in the game.
 * The height of the user is currently locked at 1.7m to simulate the eye-level of an adult who is 6ft tall. I will eventually detect the height of the HoloLens vs the floor for a more accurate experience.
