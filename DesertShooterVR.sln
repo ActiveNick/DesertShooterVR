@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2015
+# Visual Studio 2017
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesertShooterVR.Plugins", "DesertShooterVR.Plugins.csproj", "{F658183F-166D-9BDB-B42F-AEDF43EC9BC9}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesertShooterVR", "DesertShooterVR.csproj", "{9981B2A0-7292-55F0-7392-0D37B8E0ED26}"
