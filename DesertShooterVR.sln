@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2017
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesertShooterVR.Plugins", "DesertShooterVR.Plugins.csproj", "{F658183F-166D-9BDB-B42F-AEDF43EC9BC9}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesertShooterVR", "DesertShooterVR.csproj", "{9981B2A0-7292-55F0-7392-0D37B8E0ED26}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesertShooterVR.Plugins", "DesertShooterVR.Plugins.csproj", "{F658183F-166D-9BDB-B42F-AEDF43EC9BC9}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesertShooterVR.Editor", "DesertShooterVR.Editor.csproj", "{9E71A115-57B9-6F47-5A11-1E5516267318}"
 EndProject
@@ -13,14 +13,14 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{F658183F-166D-9BDB-B42F-AEDF43EC9BC9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{F658183F-166D-9BDB-B42F-AEDF43EC9BC9}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{F658183F-166D-9BDB-B42F-AEDF43EC9BC9}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{F658183F-166D-9BDB-B42F-AEDF43EC9BC9}.Release|Any CPU.Build.0 = Release|Any CPU
 		{9981B2A0-7292-55F0-7392-0D37B8E0ED26}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{9981B2A0-7292-55F0-7392-0D37B8E0ED26}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9981B2A0-7292-55F0-7392-0D37B8E0ED26}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9981B2A0-7292-55F0-7392-0D37B8E0ED26}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F658183F-166D-9BDB-B42F-AEDF43EC9BC9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F658183F-166D-9BDB-B42F-AEDF43EC9BC9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F658183F-166D-9BDB-B42F-AEDF43EC9BC9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F658183F-166D-9BDB-B42F-AEDF43EC9BC9}.Release|Any CPU.Build.0 = Release|Any CPU
 		{9E71A115-57B9-6F47-5A11-1E5516267318}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{9E71A115-57B9-6F47-5A11-1E5516267318}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9E71A115-57B9-6F47-5A11-1E5516267318}.Release|Any CPU.ActiveCfg = Release|Any CPU
