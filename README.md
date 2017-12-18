@@ -8,7 +8,11 @@ This is a work in a progress that I am sharing publicly as I add features.
 * **Unity version: 5.6.2f1 Release**
 * **HoloToolkit version: 1.5.7**
 
-To run this project on an **immersive Mixed Reality headsets**, see the branch **Immersive2017.2** in this repo which is functional but still a work in progress. It requires [Unity 2017.2 (beta)](https://unity3d.com/unity/beta/) and the latest version of [Windows Fall Creators Update](https://blogs.windows.com/windowsexperience/2017/09/01/create-and-play-this-holiday-with-the-windows-10-fall-creators-update-coming-oct-17/#VpW4VMqk8D9l5GjB.97). You will need to join the [Windows Insider Fast Ring](https://insider.windows.com). This was tested on the [Acer immersive headset](https://www.microsoft.com/en-us/store/d/acer-windows-mixed-reality-headset-developer-edition/8pb4twx13m2n).
+To run this project on an **immersive Mixed Reality headsets**, see the branch **Immersive2017.2** in this repo which is functional but still a work in progress. It requires [Unity 2017.2.1f1 (release)](https://unity3d.com/unity/) and the release version of [Windows Fall Creators Update](https://blogs.windows.com/windowsexperience/2017/09/01/create-and-play-this-holiday-with-the-windows-10-fall-creators-update-coming-oct-17/#VpW4VMqk8D9l5GjB.97). This was tested on the the following headsets:
+
+* [Acer WMR VR headset](https://www.microsoft.com/en-us/store/d/acer-windows-mixed-reality-headset-developer-edition/8pb4twx13m2n)
+* [HP WMR VR headset](https://www.microsoft.com/en-us/store/d/hp-windows-mixed-reality-headset-with-motion-controllers/8n5g0j1qf74b/5jp3)
+* [Samsung Odyssey WMR VR headset](https://www.microsoft.com/en-us/store/d/samsung-hmd-odyssey-windows-mixed-reality-headset-with-motion-controllers/8w91r774pdkk/9swg)
 
 ![Screenshot](Screenshots/Screen02-FirstPersonView.JPG)
 
