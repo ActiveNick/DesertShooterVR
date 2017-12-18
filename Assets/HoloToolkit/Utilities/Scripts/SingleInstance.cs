@@ -19,20 +19,25 @@ namespace HoloToolkit.Unity
                 if (_Instance == null)
                 {
                     T[] objects = FindObjectsOfType<T>();
-                    if (objects.Length != 1)
-                    {
-                        Debug.LogErrorFormat("Expected exactly 1 {0} but found {1}", typeof(T).ToString(), objects.Length);
-                    }
-                    else
+                    if (objects.Length == 1)
                     {
                         _Instance = objects[0];
+                    }
+                    else if (objects.Length > 1)
+                    {
+                        Debug.LogErrorFormat("Expected exactly 1 {0} but found {1}", typeof(T).ToString(), objects.Length);
                     }
                 }
                 return _Instance;
             }
         }
 
-        protected void OnDestroy()
+        /// <summary>
+        /// Called by Unity when destroying a MonoBehaviour. Scripts that extend
+        /// SingleInstance should be sure to call base.OnDestroy() to ensure the
+        /// underlying static _Instance reference is properly cleaned up.
+        /// </summary>
+        protected virtual void OnDestroy()
         {
             _Instance = null;
         }

@@ -12,7 +12,7 @@
     <AssemblyName>DesertShooterVR</AssemblyName>
     <DefaultLanguage>en-US</DefaultLanguage>
     <TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>
-    <TargetPlatformVersion>10.0.15063.0</TargetPlatformVersion>
+    <TargetPlatformVersion>10.0.16299.0</TargetPlatformVersion>
     <TargetPlatformMinVersion>10.0.10240.0</TargetPlatformMinVersion>
     <MinimumVisualStudioVersion>14</MinimumVisualStudioVersion>
     <EnableDotNetNativeCompatibleProfile>true</EnableDotNetNativeCompatibleProfile>
@@ -147,7 +147,7 @@
     <SDKReference Include="Microsoft.VCLibs, Version=14.0">
       <Name>Visual C++ 2015 Runtime for Universal Windows Platform Apps</Name>
     </SDKReference>
-    <SDKReference Include="WindowsMobile, Version=10.0.15063.0">
+    <SDKReference Include="WindowsMobile, Version=10.0.16299.0">
       <Name>Windows Mobile Extensions for the UWP</Name>
     </SDKReference>
   </ItemGroup>
@@ -323,8 +323,6 @@
     <Reference Include="UnityEngine.UI">
       <HintPath>.\Unprocessed\UnityEngine.UI.dll</HintPath>
     </Reference>
-    <Content Include="MicStreamSelector.dll" />
-    <Content Include="MicStreamSelector.pdb" Condition="Exists('MicStreamSelector.pdb')" />
     <Reference Include="UnityEngine.HoloLens">
       <HintPath>.\Unprocessed\UnityEngine.HoloLens.dll</HintPath>
     </Reference>
@@ -349,13 +347,13 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="C:\Dev\Git\DesertShooterVR\Builds\UWP-MRI\GeneratedProjects\UWP\Assembly-CSharp\Assembly-CSharp.csproj">
-      <Project>{20d99feb-51e4-4932-b498-20fe96ae5047}</Project>
+    <ProjectReference Include="D:\Dev\Git\DesertShooterVR-Immersive\Builds\UWP-MRI\GeneratedProjects\UWP\Assembly-CSharp\Assembly-CSharp.csproj">
+      <Project>{115e25e4-fa5b-4a9b-9ba6-880886254bee}</Project>
       <Name>Assembly-CSharp</Name>
       <Private>False</Private>
     </ProjectReference>
-    <ProjectReference Include="C:\Dev\Git\DesertShooterVR\Builds\UWP-MRI\GeneratedProjects\UWP\Assembly-CSharp-firstpass\Assembly-CSharp-firstpass.csproj">
-      <Project>{b1677420-3a2b-49fd-8b7a-5878b2db28d8}</Project>
+    <ProjectReference Include="D:\Dev\Git\DesertShooterVR-Immersive\Builds\UWP-MRI\GeneratedProjects\UWP\Assembly-CSharp-firstpass\Assembly-CSharp-firstpass.csproj">
+      <Project>{0125d9e7-2cad-4628-8f0d-6aeb2da584c2}</Project>
       <Name>Assembly-CSharp-firstpass</Name>
       <Private>False</Private>
     </ProjectReference>
@@ -409,10 +407,6 @@
             <Delete Files="$(ProjectDir)PlaneFinding.pdb" Condition="Exists('$(ProjectDir)PlaneFinding.pdb')" />
             <Delete Files="$(ProjectDir)PlaneFinding.dll.mdb" Condition="Exists('$(ProjectDir)PlaneFinding.dll.mdb')" />
             <Copy SourceFiles="$(ProjectDir)Plugins\$(PlatformShortName)\PlaneFinding.pdb" DestinationFiles="$(ProjectDir)PlaneFinding.pdb" Condition="Exists('$(ProjectDir)Plugins\$(PlatformShortName)\PlaneFinding.pdb')" />
-        <Copy SourceFiles="$(ProjectDir)Plugins\$(PlatformShortName)\MicStreamSelector.dll" DestinationFiles="$(ProjectDir)MicStreamSelector.dll" />
-            <Delete Files="$(ProjectDir)MicStreamSelector.pdb" Condition="Exists('$(ProjectDir)MicStreamSelector.pdb')" />
-            <Delete Files="$(ProjectDir)MicStreamSelector.dll.mdb" Condition="Exists('$(ProjectDir)MicStreamSelector.dll.mdb')" />
-            <Copy SourceFiles="$(ProjectDir)Plugins\$(PlatformShortName)\MicStreamSelector.pdb" DestinationFiles="$(ProjectDir)MicStreamSelector.pdb" Condition="Exists('$(ProjectDir)Plugins\$(PlatformShortName)\MicStreamSelector.pdb')" />
         <Copy SourceFiles="$(ProjectDir)Plugins\$(PlatformShortName)\GpuTiming.dll" DestinationFiles="$(ProjectDir)GpuTiming.dll" />
             <Delete Files="$(ProjectDir)GpuTiming.pdb" Condition="Exists('$(ProjectDir)GpuTiming.pdb')" />
             <Delete Files="$(ProjectDir)GpuTiming.dll.mdb" Condition="Exists('$(ProjectDir)GpuTiming.dll.mdb')" />

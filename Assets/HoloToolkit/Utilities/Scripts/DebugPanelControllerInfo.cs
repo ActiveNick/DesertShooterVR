@@ -2,14 +2,18 @@
 // Licensed under the MIT License. See LICENSE in the project root for license information.
 
 using System;
-using System.Collections.Generic;
 using UnityEngine;
+
+#if UNITY_WSA && UNITY_2017_2_OR_NEWER
+using System.Collections.Generic;
 using UnityEngine.XR.WSA.Input;
+#endif
 
 namespace HoloToolkit.Unity
 {
     public class DebugPanelControllerInfo : MonoBehaviour
     {
+#if UNITY_WSA && UNITY_2017_2_OR_NEWER
         private class ControllerState
         {
             public InteractionSourceHandedness Handedness;
@@ -29,12 +33,41 @@ namespace HoloToolkit.Unity
         }
 
         private Dictionary<uint, ControllerState> controllers;
+#endif
+
+        // Text display label game objects
+        public TextMesh LeftInfoTextPointerPosition;
+        public TextMesh LeftInfoTextPointerRotation;
+        public TextMesh LeftInfoTextGripPosition;
+        public TextMesh LeftInfoTextGripRotation;
+        public TextMesh LeftInfoTextGripGrasped;
+        public TextMesh LeftInfoTextMenuPressed;
+        public TextMesh LeftInfoTextTriggerPressed;
+        public TextMesh LeftInfoTextTriggerPressedAmount;
+        public TextMesh LeftInfoTextThumbstickPressed;
+        public TextMesh LeftInfoTextThumbstickPosition;
+        public TextMesh LeftInfoTextTouchpadPressed;
+        public TextMesh LeftInfoTextTouchpadTouched;
+        public TextMesh LeftInfoTextTouchpadPosition;
+        public TextMesh RightInfoTextPointerPosition;
+        public TextMesh RightInfoTextPointerRotation;
+        public TextMesh RightInfoTextGripPosition;
+        public TextMesh RightInfoTextGripRotation;
+        public TextMesh RightInfoTextGripGrasped;
+        public TextMesh RightInfoTextMenuPressed;
+        public TextMesh RightInfoTextTriggerPressed;
+        public TextMesh RightInfoTextTriggerPressedAmount;
+        public TextMesh RightInfoTextThumbstickPressed;
+        public TextMesh RightInfoTextThumbstickPosition;
+        public TextMesh RightInfoTextTouchpadPressed;
+        public TextMesh RightInfoTextTouchpadTouched;
+        public TextMesh RightInfoTextTouchpadPosition;
 
         private void Awake()
         {
+#if UNITY_WSA && UNITY_2017_2_OR_NEWER
             controllers = new Dictionary<uint, ControllerState>();
 
-#if UNITY_WSA
             InteractionManager.InteractionSourceDetected += InteractionManager_InteractionSourceDetected;
 
             InteractionManager.InteractionSourceLost += InteractionManager_InteractionSourceLost;
@@ -50,6 +83,7 @@ namespace HoloToolkit.Unity
             }
         }
 
+#if UNITY_WSA && UNITY_2017_2_OR_NEWER
         private void InteractionManager_InteractionSourceDetected(InteractionSourceDetectedEventArgs obj)
         {
             Debug.LogFormat("{0} {1} Detected", obj.state.source.handedness, obj.state.source.kind);
@@ -88,12 +122,15 @@ namespace HoloToolkit.Unity
                 controllerState.TouchpadPosition = obj.state.touchpadPosition;
             }
         }
+#endif
 
         private string GetControllerInfo()
         {
-            string toReturn = "";
+            string toReturn = string.Empty;
+#if UNITY_WSA && UNITY_2017_2_OR_NEWER
             foreach (ControllerState controllerState in controllers.Values)
             {
+                // Debug message
                 toReturn += string.Format("Hand: {0}\nPointer: Position: {1} Rotation: {2}\n" +
                                           "Grip: Position: {3} Rotation: {4}\nGrasped: {5} " +
                                           "MenuPressed: {6}\nSelect: Pressed: {7} PressedAmount: {8}\n" +
@@ -104,7 +141,42 @@ namespace HoloToolkit.Unity
                                           controllerState.MenuPressed, controllerState.SelectPressed, controllerState.SelectPressedAmount,
                                           controllerState.ThumbstickPressed, controllerState.ThumbstickPosition, controllerState.TouchpadPressed,
                                           controllerState.TouchpadTouched, controllerState.TouchpadPosition);
+
+                // Text label display
+                if (controllerState.Handedness.Equals(InteractionSourceHandedness.Left))
+                {
+                    LeftInfoTextPointerPosition.text = controllerState.Handedness.ToString();
+                    LeftInfoTextPointerRotation.text = controllerState.PointerRotation.ToString();
+                    LeftInfoTextGripPosition.text = controllerState.GripPosition.ToString();
+                    LeftInfoTextGripRotation.text = controllerState.GripRotation.ToString();
+                    LeftInfoTextGripGrasped.text = controllerState.Grasped.ToString();
+                    LeftInfoTextMenuPressed.text = controllerState.MenuPressed.ToString();
+                    LeftInfoTextTriggerPressed.text = controllerState.SelectPressed.ToString();
+                    LeftInfoTextTriggerPressedAmount.text = controllerState.SelectPressedAmount.ToString();
+                    LeftInfoTextThumbstickPressed.text = controllerState.ThumbstickPressed.ToString();
+                    LeftInfoTextThumbstickPosition.text = controllerState.ThumbstickPosition.ToString();
+                    LeftInfoTextTouchpadPressed.text = controllerState.TouchpadPressed.ToString();
+                    LeftInfoTextTouchpadTouched.text = controllerState.TouchpadTouched.ToString();
+                    LeftInfoTextTouchpadPosition.text = controllerState.TouchpadPosition.ToString();
+                }
+                else if (controllerState.Handedness.Equals(InteractionSourceHandedness.Right))
+                {
+                    RightInfoTextPointerPosition.text = controllerState.PointerPosition.ToString();
+                    RightInfoTextPointerRotation.text = controllerState.PointerRotation.ToString();
+                    RightInfoTextGripPosition.text = controllerState.GripPosition.ToString();
+                    RightInfoTextGripRotation.text = controllerState.GripRotation.ToString();
+                    RightInfoTextGripGrasped.text = controllerState.Grasped.ToString();
+                    RightInfoTextMenuPressed.text = controllerState.MenuPressed.ToString();
+                    RightInfoTextTriggerPressed.text = controllerState.SelectPressed.ToString();
+                    RightInfoTextTriggerPressedAmount.text = controllerState.SelectPressedAmount.ToString();
+                    RightInfoTextThumbstickPressed.text = controllerState.ThumbstickPressed.ToString();
+                    RightInfoTextThumbstickPosition.text = controllerState.ThumbstickPosition.ToString();
+                    RightInfoTextTouchpadPressed.text = controllerState.TouchpadPressed.ToString();
+                    RightInfoTextTouchpadTouched.text = controllerState.TouchpadTouched.ToString();
+                    RightInfoTextTouchpadPosition.text = controllerState.TouchpadPosition.ToString();
+                }
             }
+#endif
             return toReturn.Substring(0, Math.Max(0, toReturn.Length - 2));
         }
     }

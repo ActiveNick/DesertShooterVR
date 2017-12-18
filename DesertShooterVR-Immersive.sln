@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2017
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesertShooterVR-Immersive", "DesertShooterVR-Immersive.csproj", "{09282B11-7A95-4C0B-C5AE-A04820E26BF1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesertShooterVR-Immersive.Plugins", "DesertShooterVR-Immersive.Plugins.csproj", "{42E176E3-6CFE-9814-1B97-2406412A6DE0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesertShooterVR-Immersive.Editor", "DesertShooterVR-Immersive.Editor.csproj", "{9492C47D-5276-47F3-EABD-68AC8D72CCBB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{09282B11-7A95-4C0B-C5AE-A04820E26BF1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{09282B11-7A95-4C0B-C5AE-A04820E26BF1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{09282B11-7A95-4C0B-C5AE-A04820E26BF1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{09282B11-7A95-4C0B-C5AE-A04820E26BF1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{42E176E3-6CFE-9814-1B97-2406412A6DE0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{42E176E3-6CFE-9814-1B97-2406412A6DE0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{42E176E3-6CFE-9814-1B97-2406412A6DE0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{42E176E3-6CFE-9814-1B97-2406412A6DE0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9492C47D-5276-47F3-EABD-68AC8D72CCBB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9492C47D-5276-47F3-EABD-68AC8D72CCBB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9492C47D-5276-47F3-EABD-68AC8D72CCBB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9492C47D-5276-47F3-EABD-68AC8D72CCBB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
